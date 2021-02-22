@@ -43,6 +43,8 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+  It gives us the ability to put functions together; it's the ability to access functions at the parent level scope in the child level scope even if the parent level scope is terminated.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,8 +66,13 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+  it's in the return function part - that is the child scope function that will draw from the parent personalDice;  you can tell because the variable is contained inside
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+  The roll of the dice will always produce a number between 1 and 6 and Dan will always be the name in the string
+
 c. What is the lexical scope of `newRoll`? 
+  It is function scoped because it is defined within the function
 
 
 ### Task 3 - Stretch Goals

@@ -31,7 +31,7 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
     The variable for counter1 is inside the function and in counter2 it is outside of the function.  Therevore, the counter1 variable would be function scoped whereas counter2 is global scoped.
 
   2. Which of the two uses a closure? How can you tell?
-    Counter1 uses a closure because the parent function can be accessed by the child function; the variable is contained within the function so it doesn't have to look to the global
+    I think they both use closure.  counter1 has closure with the nested function and counter2 is reaching outside of the function to grab the variable off the global scope
 
   3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
     Counter1 would be the preferable in almost all cases because it is not standard practice to have your variables globally scoped.  Counter2 would be better only if you know that other functions are going to need to access it and will look outside of itself to get the variable 

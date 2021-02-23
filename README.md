@@ -66,13 +66,13 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
-  it's in the return function part - that is the child scope function that will draw from the parent personalDice;  you can tell because the variable is contained inside
+ It has a function and it has the variables that it will use so there is closure.  I can see that there is closure when the dansRoll and zoesRoll are both able to use the variable
 
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-  The roll of the dice will always produce a number between 1 and 6 and Dan will always be the name in the string
+  Math.floor tells us that the roll of the dice will always produce a number between 1 and 6 and because of the Math.random it will always be a randomly chosen number.  Dan will always be the name in the string
 
 c. What is the lexical scope of `newRoll`? 
-  It is function scoped because it is defined within the function
+  It is function scoped because it is defined within the function; it is defined in the const newRoll variable
 
 
 ### Task 3 - Stretch Goals
